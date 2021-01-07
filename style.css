@@ -1,3 +1,127 @@
-body {
-  background-color: teal;
+:root {
+  --main-bg-color: #0c164f;
+  --text-color: #c0d6df;
+  --design-color1: #ff3f00;
+  --design-color2: #ff7f11;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: "Roboto Mono", monospace;
+}
+/* Header and nav */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--design-color1) solid 2px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  border-bottom: var(--design-color1) solid 2px;
+}
+
+.login-link {
+  background-color: var(--design-color1);
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.login-link:hover {
+  background: var(--design-color2);
+  border: none;
+}
+
+.logo {
+  width: 9em;
+  order: -1;
+  padding: 1em 0;
+}
+
+/* Main------------------------- */
+.kosmonaute {
+  width: 35%;
+}
+
+main {
+  height: 60vh;
+  /* ok matau su height reikia atsargiai, bet šiuo atveju atrodo awesome */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.content-404 {
+  width: 30%;
+  border: var(--design-color1) dotted 5px;
+  border-radius: 500px;
+  padding: 3em;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.go-home-btn {
+  background-color: #d81e5b;
+  font-size: 1rem;
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.go-home-btn:hover {
+  background-color: #b42454;
+}
+
+.go-back-btn {
+  background-color: #9448bc;
+  font-size: 1rem;
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.go-back-btn:hover {
+  background-color: #73408f;
+  
+}
+
